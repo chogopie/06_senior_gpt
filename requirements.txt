@@ -1,0 +1,5 @@
+langchain
+openai
+streamlit
+tiktoken
+pinecone-client
