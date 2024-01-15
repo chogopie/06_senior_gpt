@@ -1,6 +1,6 @@
-import os
-from dotenv import load_dotenv
-load_dotenv()
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()
 
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
@@ -13,9 +13,9 @@ from langchain.schema.runnable import RunnablePassthrough, RunnableLambda
 
 ### system setting ###
 
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
-PINECONE_ENV = os.getenv('PINECONE_ENV')
+# OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+# PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
+# PINECONE_ENV = os.getenv('PINECONE_ENV')
 
 llm = ChatOpenAI(
     openai_api_key=OPENAI_API_KEY,
